@@ -4,7 +4,7 @@
 
 # <p align="center">Master of Computer vision and Robotics</p >   
 <h3 align="center">Robotics Project</h3><br> 
-<p align="center">  
+<p align="left">  
    <img src = "rosimages/vibot.png" >
 </p >
 
