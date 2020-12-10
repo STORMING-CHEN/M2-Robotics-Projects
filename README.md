@@ -3,7 +3,11 @@
 </p >
 
 # <p align="center">Master of Computer vision and Robotics</p >   
-<h3 align="center">Robotics Project</h3>  
+<h3 align="center">Robotics Project</h3><br> 
+<p align="center">  
+   <img src = "rosimages/vibot.png" >
+</p >
+
 <p align="center">Supervisors: Ralph SEULIN</p >  
 <p align="center">Students: CHEN CHENG</p >  
  
