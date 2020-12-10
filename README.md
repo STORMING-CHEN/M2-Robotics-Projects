@@ -1,6 +1,6 @@
 <p align="center">![](https://github.com/STORMING-CHEN/M2-Robotics-Projects/raw/main/rosimages/ub.png)</p >  
 
-# Master of Computer vision and Robotics  
+# <p align="center">Master of Computer vision and Robotics</p >  
 ## Robotics Project  
 <p align="center">Supervisors: Ralph SEULIN</p >  
 <p align="center">Students: CHEN CHENG</p >  
