@@ -13,13 +13,13 @@
 <p align="center">Students: CHEN CHENG</p >  
 
 ## Contents
-- [Introduction](#introduction)
-- [Tasks to accomplish](#Tasks-to-accomplish)
-- [Review and analysis of studied techniques](#Review and analysis of studied techniques)
-- [Implementation](#Implementation)
-- [Conclusion](#Conclusion)
-- [Demo videos](#Demo videos)
-- [References](#References)
+-- [Introduction](#introduction)
+-- [Tasks to accomplish](#Tasks-to-accomplish)
+-- [Related techniques](#Related-techniques)
+-- [Implementation](#Implementation)
+-- [Conclusion](#Conclusion)
+-- [Demo videos](#Demo-videos)
+-- [References](#References)
 ## Introduction
    The Robot Operating System (ROS) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms. It can be considered as an API to make the process of developing a robotic related projects more flexible, and simplified. There will be no need for an extensive knowledge of the hardware in which it saves much effort and time in the development phase.  
    Many operating systems support ROS, such as ubuntu and windows. Ubuntu is a more stable operating system using ROS. However, for the development of this project, we used the Construct Web platform, which is an online robot working environment. The platform uses ubuntu as the main operating system with ROS kinetic, and uses Gazebo as the real-world simulator to simulate turtlebot 3 or other robot models. This platform will enable us to learn some basic ROS technologies so that we can apply robot control, mapping, robot localization, path planning and navigation with several waypoints.
@@ -32,7 +32,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 3. **Path planning**: we need to publish a goal to move base navigation system in which Turtlebot3 can reach that goal without colliding with any obstacles.
 4. **Waypoints Navigation**: Create waypoints that allows Turtlebot3 to navigate within the environment.
 
-## Review and analysis of studied techniques
+## Related techniques
 <h3>Robotics Project</h3> <br>
 <h3>Map Building</h3> <br>
 <h3>Localization</h3> <br>
