@@ -45,6 +45,6 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 ## Demo videos
 
 ## References
-  - [Construct Platform](http://theconstructsim.com)
+1. [Construct Platform](http://theconstructsim.com)
   - [Wiki ROS](http://wiki.ros.org/)
   - [ROS.org](https://www.ros.org/)
