@@ -1,9 +1,7 @@
-![](https://github.com/STORMING-CHEN/M2-Robotics-Projects/raw/main/rosimages/ub.png)  
-<p align="center">
-   <p align="center">
+<p align="center">  
    <img src = "rosimages/ub.png" width = 400>
-   </p >
 </p >
+
 # <p align="center">Master of Computer vision and Robotics</p >  
 **<p align="center">Robotics Project</p >** 
 <p align="center">Supervisors: Ralph SEULIN</p >  
