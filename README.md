@@ -1,4 +1,4 @@
-![11](https://github.com/STORMING-CHEN/M2-Robotics-Projects/raw/main/rosimages/ub.png)  
+![](https://github.com/STORMING-CHEN/M2-Robotics-Projects/raw/main/rosimages/ub.png)  
  
 # <p align="center">Master of Computer vision and Robotics</p >  
 **<p align="center">Robotics Project</p >** 
