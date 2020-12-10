@@ -26,9 +26,9 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 
 ## Review and analysis of studied techniques
 
-## implementation
+## Implementation
 
-## conclution
+## Conclution
 
 ## Demo videos
 
