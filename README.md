@@ -2,11 +2,11 @@
 Supervisors: Ralph SEULIN Student: CHENG CHEN
 http://github.com/STORMING-CHEN/M2-Robotics-Project-constructraw/master//rosimages_folder/ub.png
 
-                 Master of Computer vision and Robotics
+Master of Computer vision and Robotics
 ---------------------------------
-                 M2 Robotics Project
-                 Supervisors: Ralph SEULIN
-                 Students: CHEN CHENG
+ M2 Robotics Project
+             Supervisors: Ralph SEULIN
+             Students: CHEN CHENG 
 
 Introduction
 -----------------------------------
