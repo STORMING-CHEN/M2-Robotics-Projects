@@ -1,10 +1,8 @@
-<center>
 ![](https://github.com/STORMING-CHEN/M2-Robotics-Projects/raw/main/rosimages/ub.png)
 # Master of Computer vision and Robotics  
 ## Robotics Project  
  Supervisors: Ralph SEULIN  
  Students: CHEN CHENG 
-/<center>
  
 ## Introduction
 The Robot Operating System (ROS) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms. It can be considered as an API to make the process of developing a robotic related projects more flexible, and simplified. There will be no need for an extensive knowledge of the hardware in which it saves much effort and time in the development phase.
