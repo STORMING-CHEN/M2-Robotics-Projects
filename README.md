@@ -4,6 +4,7 @@
 
 # <p align="center">Master of Computer vision and Robotics</p >  
 **<p align="center">Robotics Project</p >** 
+<h3 align="center">Robotics Project</h3><br>  
 <p align="center">Supervisors: Ralph SEULIN</p >  
 <p align="center">Students: CHEN CHENG</p >  
  
