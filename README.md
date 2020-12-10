@@ -1,13 +1,13 @@
 # M2-Robotics-Projects
 Supervisors: Ralph SEULIN Student: CHENG CHEN
 http://github.com/STORMING-CHEN/M2-Robotics-Project-constructraw/master//rosimages_folder/ub.png
-<p align="center">
-Master of Computer vision and Robotics
+
+                 Master of Computer vision and Robotics
 ---------------------------------
-M2 Robotics Project
-Supervisors: Ralph SEULIN
-Students: CHEN CHENG
- </p>
+                 M2 Robotics Project
+                 Supervisors: Ralph SEULIN
+                 Students: CHEN CHENG
+
 Introduction
 -----------------------------------
 The Robot Operating System (ROS) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms. It can be considered as an API to make the process of developing a robotic related projects more flexible, and simplified. There will be no need for an extensive knowledge of the hardware in which it saves much effort and time in the development phase.
