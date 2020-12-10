@@ -23,3 +23,10 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 2. Mapping and localization: Construct a map of the whole environment. We need to fully occupy the whole environment, then we need to localize the Robot.
 3. Path planning: we need to publish a goal to move base navigation system in which Turtlebot3 can reach that goal without colliding with any obstacles.
 4. Waypoints Navigation: Create waypoints that allows Turtlebot3 to navigate within the environment.
+
+
+
+## References
+  - [The Construct Platform](http://theconstructsim.com)
+  - [WIKI ROS](http://wiki.ros.org/)
+  - [ROS.org](https://www.ros.org/)
