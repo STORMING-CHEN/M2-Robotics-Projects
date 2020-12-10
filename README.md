@@ -3,19 +3,18 @@ Supervisors: Ralph SEULIN
 Student: CHENG CHEN  
 http://github.com/STORMING-CHEN/M2-Robotics-Project-constructraw/master//rosimages_folder/ub.png
 
-Master of Computer vision and Robotics
----------------------------------
- M2 Robotics Project
-             Supervisors: Ralph SEULIN
-             Students: CHEN CHENG 
+## Master of Computer vision and Robotics  
+ M2 Robotics Project  
+ Supervisors: Ralph SEULIN  
+ Students: CHEN CHENG 
 
-Introduction
------------------------------------
+## Introduction
+
 
 The Robot Operating System (ROS) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms. It can be considered as an API to make the process of developing a robotic related projects more flexible, and simplified. There will be no need for an extensive knowledge of the hardware in which it saves much effort and time in the development phase.
 Many operating systems support ROS, such as ubunto and windows. Ubunto is a more stable operating system using ROS. However, for the development of this project, we used the Construct Web platform, which is an online robot working environment. The platform uses ubunto as the main operating system with ROS kinetic, and uses Gazebo as the real-world simulator to simulate turtlebot 3 or other robot models. This platform will enable us to learn some basic ROS technologies so that we can apply robot control, mapping, robot positioning, path planning and navigation with several waypoints.
 
-Tasks to accomplish
+## Tasks to accomplish
 ------------------
 The project goal is to apply the learned ROS techniques and packages to apply the navigation task on Turtlebot3:
 1. Motion Control: Moving the robot around the environment using /cmd_vel topic.
