@@ -46,5 +46,5 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 
 ## References
 1. [Construct Platform](http://theconstructsim.com)
-  - [Wiki ROS](http://wiki.ros.org/)
-  - [ROS.org](https://www.ros.org/)
+2. [Wiki ROS](http://wiki.ros.org/)
+3. [ROS.org](https://www.ros.org/)
