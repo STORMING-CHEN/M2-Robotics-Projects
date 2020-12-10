@@ -1,5 +1,5 @@
 <p align="right">  
-   <img src = "rosimages/vibot.png" width = 100>
+   <img src = "rosimages/vibot.png" width = 80>
 </p >
 
 <p align="center">  
