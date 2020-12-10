@@ -25,10 +25,10 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 4. **Waypoints Navigation**: Create waypoints that allows Turtlebot3 to navigate within the environment.
 
 ## Review and analysis of studied techniques
-1. <h3>Robotics Project</h3> <br>
-2. <h3 align="center">Map Building</h3> <br>
-3. <h3 align="center">Localization</h3> <br>
-4. <h3 align="center">Path Planning</h3> <br>
+<h3>Robotics Project</h3> <br>
+<h3>Map Building</h3> <br>
+<h3>Localization</h3> <br>
+<h3>Path Planning</h3> <br>
 
 ## Implementation
 
