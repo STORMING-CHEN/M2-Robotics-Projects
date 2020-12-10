@@ -37,6 +37,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 <h3>Map Building</h3> <br>
 <h3>Localization</h3> <br>
 <h3>Path Planning</h3> <br>
+<h3>Waypoints Navigation</h3> <br>
 
 ## Implementation
 
