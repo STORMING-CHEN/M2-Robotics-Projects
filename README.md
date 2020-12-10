@@ -32,7 +32,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 
 ## Implementation
 
-## Conclution
+## Conclusion
 
 ## Demo videos
 
