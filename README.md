@@ -1,12 +1,13 @@
+<p align="right">  
+   <img src = "rosimages/vibot.png" width = 200>
+</p >
 <p align="center">  
    <img src = "rosimages/ub.png" width = 400>
 </p >
 
 # <p align="center">Master of Computer vision and Robotics</p >   
-<h3 align="center">Robotics Project</h3><br> 
-<p align="left">  
-   <img src = "rosimages/vibot.png" >
-</p >
+<h3 align="center">Robotics Project</h3> 
+
 
 <p align="center">Supervisors: Ralph SEULIN</p >  
 <p align="center">Students: CHEN CHENG</p >  
