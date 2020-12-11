@@ -48,4 +48,4 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 ## References
 1. [Construct Platform](http://theconstructsim.com)
 2. [Wiki ROS](http://wiki.ros.org/)
-3. [ROS.org](https://www.ros.org/)
+3. [Construct course support](https://get-help.robotigniteacademy.com/c/course-support/masteringwithrosturtlebot3/27)
