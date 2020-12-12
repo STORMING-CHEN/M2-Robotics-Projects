@@ -130,6 +130,52 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 ## Implementation
 
+
+
+
+
+
+In order to realize the navigation function, the first step we need to do is to build a map.   
+1.Build the project package of navigation task, and create launch and param folder in it to prepare for subsequent operation.  
+
+2. create a luanch file named **start_mapping.launch**. It contains the following contents: start turtlebot3 and call slam_gmapping node, and various parameters of the node. The most important parameters are:   
+- **maxUrange**: This parameter sets the distance the laser creates the map. The larger the range, the faster the map is created, and the less likely the robot is to get lost. The disadvantage is that it consumes more resources.
+- **throttle_scans**:  Very useful to reduce resource consumption.  
+3.Start the launch file to start the mapping operation  
+4. Start Rviz to visualize the process of map building. I use the pre configured Rviz for mapping. Its command is as follows:  
+    rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz
+We can see the unexplored maps in the map interface of rviz:
+-
+-
+-
+-
+-
+5.Move turnlebot3 freely around to explore the map and complete the construction of the map. The command to move turtlebot3 with keyboard is 
+roslaunch_ teleop turtlebot3_ teleop_ key.launch 
+Where w and x control the forward and backward, a and d control the rotation, s clear the velocity.  
+6.Save the map obtained in the previous step. First, we create a folder called maps in the package, and then we use the **map_saver** node form map_server package in ROS Navigation Stack, to read map data in the ROS service and save it. Its execution command is:     rosrun map_ server map_ saver -f my_ Map; 
+after saving, we will get two files in maps folder:
+- **my_map.pgm**： it contains the occupancy data of the map (the really important data)
+- **my_map.yaml**：it contains some metadata about the map, like the map dimensions and resolution, or the path to the PGM file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Conclusion
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The purpose of this project is to let us understand the related knowledge of robot navigation, and make a preliminary attempt. Robot navigation is mainly composed of three parts: map building, localization (Simultaneously 2 called SLAM) and path planning. In order to help us understand, the task we are required to complete in turn is to first build a mobile platform and make it subscribe / CMD_ Vel topic, then use slam_mapping node to build the scene map, and use AMCL node to localization, and then use move_base node which integrates all the above functions to implement path planning,  in the end tried multiple waypoints navigation.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to prepare for the project, we need to study the corresponding basic courses, they are: linux4robotics, python4robotics, ROS basic in 5 days, ROS navigation in 5 days, mastering Turtle 3. All the related courses are studied and practiced on the construction platform, and the final project is unit 8 of the turtlebot3 course. There is no real machine operation in the whole process. The operating system supported by the construct platform is Ubuntu, and the simulated environment is gazebo. Construct is a very good robot virtual platform, the tutorial is written reasonably and efficiently. But there is a disadvantage that the platform is unstable. So in order not to be affected by the emergency crash, the simulation experiment needs to be carried out in advance.  
