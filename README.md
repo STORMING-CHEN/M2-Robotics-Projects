@@ -33,16 +33,16 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 4. **Waypoints Navigation**: Create waypoints that allows Turtlebot3 to navigate within the environment.
 
 ## Related techniques
- <h3>1.Motion Control</h3> <br>
+ <h3>1.Motion Control</h3>  
               In the field of robot, the common research problems include mapping, localization and path planning. Simultaneous localization and mapping belongs to the intersection of location and mapping.
               
- <h3>2.Map Building</h3> <br>
+ <h3>2.Map Building</h3>  
  
- <h3>3.Localization</h3> <br>
+ <h3>3.Localization</h3>  
  
- <h3>4.Path Planning</h3> <br>
+ <h3>4.Path Planning</h3>  
  
- <h3>5.Waypoints Navigation</h3> <br>
+ <h3>5.Waypoints Navigation</h3>  
  
 
 ## Implementation
