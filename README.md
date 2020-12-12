@@ -46,7 +46,9 @@ The purpose of this project is to let us understand the related knowledge of rob
 In order to prepare for the project, we need to study the corresponding basic courses, they are: linux4robotics, python4robotics, ROS basic in 5 days, ROS navigation in 5 days, mastering Turtle 3. All the related courses are studied and practiced on the construction platform, and the final project is unit 8 of the turtlebot3 course. There is no real machine operation in the whole process. The operating system supported by the construct platform is Ubuntu, and the simulated environment is gazebo. Construct is a very good robot virtual platform, the tutorial is written reasonably and efficiently. But there is a disadvantage that the platform is unstable. So in order not to be affected by the emergency crash, the simulation experiment needs to be carried out in advance.  
 Through this whole project, I have gained experience in the principle of ROS, the use of Linux system, the framework of python, the principle of navigation technology, the use of various robots and markdown language in githup.
 ## Demo videos
-
+- [Motion control](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
+- [Path planing navigation](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
+- [Waypoints navigation](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
 ## References
 1. [Construct Platform](http://theconstructsim.com)
 2. [Wiki ROS](http://wiki.ros.org/)
