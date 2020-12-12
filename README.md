@@ -41,7 +41,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
    <img src = "rosimages/module.png" width = 300>
 </p >
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **gmapping package** provides **slam_gmapping** node. This node is implementing the gmapping SLAM algorithm. It creates a 2D map of the environment using the data the Robot is providing during movement like laser data, in which it will be transformed to an Occupancy Grid Map (OGM) data format (nav_msgs/OccupancyGrid.msg) where it represents a 2-D grid map and each cell of the grid represents the occupancy.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Gmapping package** provides **slam_gmapping** node. This node is implementing the gmapping SLAM algorithm. It creates a 2D map of the environment using the data the Robot is providing during movement like laser data, in which it will be transformed to an Occupancy Grid Map (OGM) data format (nav_msgs/OccupancyGrid.msg) where it represents a 2-D grid map and each cell of the grid represents the occupancy.
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The figure below is the framework of gmapping package.
     
 <p align="center">  
@@ -67,7 +67,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 
  <h3>&nbsp;&nbsp;&nbsp;&nbsp;Localization</h3>  
  
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AMCL (Adaptive Monte Carlo Localization) package provides amcl node. amcl is a probabilistic localization system for a robot moving in 2D. It implements the adaptive (or KLD-sampling) Monte Carlo localization approach , which uses a particle filter to track the pose of a robot against a known map.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AMCL** (Adaptive Monte Carlo Localization) package provides amcl node. amcl is a probabilistic localization system for a robot moving in 2D. It implements the adaptive (or KLD-sampling) Monte Carlo localization approach , which uses a particle filter to track the pose of a robot against a known map.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The figure below is the framework of amcl package.
 <p align="center">  
    <img src = "rosimages/amcl_frame.png" width = 450>
@@ -93,7 +93,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 
  <h3>&nbsp;&nbsp;&nbsp;&nbsp;Path Planning</h3>  
  
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move_base package is the base of the navigation task where it connects all the navigation components. The move_base package provides an implementation of an action that, given a goal in the world, will attempt to reach it with a mobile base. The move_base node links together a global and local planner to accomplish its global navigation task.  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Move_base** package is the base of the navigation task where it connects all the navigation components. The move_base package provides an implementation of an action that, given a goal in the world, will attempt to reach it with a mobile base. The move_base node links together a global and local planner to accomplish its global navigation task.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The figure below is the navigation framework based on move_base package.
 <p align="center">  
    <img src = "rosimages/navigation_configuration.png" width = 800>
