@@ -38,7 +38,17 @@ The project goal is to apply the learned ROS techniques and packages to apply 
               <p align="center">  
    <img src = "rosimages/module.png" width = 250>
 </p >
-              
+        gmapping package provides slam_gmapping node. This node is implementing the gmapping SLAM algorithm. It creates a 2D map of the environment using the data the Robot is providing during movement like laser data, in which it will be transformed to an Occupancy Grid Map (OGM) data format (nav_msgs/OccupancyGrid.msg) where it represents a 2-D grid map and each cell of the grid represents the occupancy.
+        The figure below is the framework of gmapping package.
+    
+    <p align="center">  
+   <img src = "rosimages/gmapping_frame.png" width = 400>
+    </p >
+    
+    
+    
+    
+    
  <h3>2.Map Building</h3>  
  
  <h3>3.Localization</h3>  
