@@ -64,7 +64,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 
 
 
- <h3>3.Localization</h3>  
+ <h3>&nbsp;&nbsp;&nbsp;&nbsp;Localization</h3>  
  
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AMCL (Adaptive Monte Carlo Localization) package provides amcl node. amcl is a probabilistic localization system for a robot moving in 2D. It implements the adaptive (or KLD-sampling) Monte Carlo localization approach , which uses a particle filter to track the pose of a robot against a known map.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The figure below is the framework of amcl package.
@@ -88,9 +88,8 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 - **request_nomotion_update**: Manually perform updates and publish updated particles
 - **static_map**: amcl calls the service to obtain map data
 
- <h3>4.Path Planning</h3>  
+ <h3>&nbsp;&nbsp;&nbsp;&nbsp;Path Planning</h3>  
  
- <h3>5.Waypoints Navigation</h3>  
  
 
 ## Implementation
