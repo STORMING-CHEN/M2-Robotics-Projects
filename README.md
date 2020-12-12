@@ -42,7 +42,9 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 ## Implementation
 
 ## Conclusion
-
+The purpose of this project is to let us understand the related knowledge of robot navigation, and make a preliminary attempt. Robot navigation is mainly composed of three parts: map building, localization (Simultaneously 2 called SLAM) and path planning. In order to help us understand, the task we are required to complete in turn is to first build a mobile platform and make it subscribe / CMD_ Vel topic, then use slam_mapping node to build the scene map, and use AMCL node to localization, and then use move_base node which integrates all the above functions to implement path planning,  in the end tried multiple waypoints navigation.  
+In order to prepare for the project, we need to study the corresponding basic courses, they are: linux4robotics, python4robotics, ROS basic in 5 days, ROS navigation in 5 days, mastering Turtle 3. All the related courses are studied and practiced on the construction platform, and the final project is unit 8 of the turtlebot3 course. There is no real machine operation in the whole process. The operating system supported by the construct platform is Ubuntu, and the simulated environment is gazebo. Construct is a very good robot virtual platform, the tutorial is written reasonably and efficiently. But there is a disadvantage that the platform is unstable. So in order not to be affected by the emergency crash, the simulation experiment needs to be carried out in advance.  
+Through this whole project, I have gained experience in the principle of ROS, the use of Linux system, the framework of python, the principle of navigation technology, the use of various robots and markdown language in githup.
 ## Demo videos
 
 ## References
