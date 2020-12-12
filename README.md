@@ -35,6 +35,9 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 ## Related techniques
  <h3>1.Motion Control</h3>  
               In the field of robot, the common research problems include mapping, localization and path planning. Simultaneous localization and mapping belongs to the intersection of location and mapping.
+              <p align="center">  
+   <img src = "rosimages/module.png" width = 250>
+</p >
               
  <h3>2.Map Building</h3>  
  
