@@ -135,7 +135,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Map Building</h3> 
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to realize the navigation function, the first step we need to do is to build a map.   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to realize the navigation function, the first step we need to do is to build a map with **slam_gmapping** node.   
 1. Build the project package of navigation task, and create 2 folders named **launch** and **param**  in it to prepare for subsequent operation.  
 
 2. Create a launch file named **start_mapping.launch**. It contains the following contents: start turtlebot3, call slam_gmapping node, and modify various parameters of the node.&nbsp;&nbsp;&nbsp;&nbsp;The most important parameters are:   
@@ -163,7 +163,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Localizationg</h3> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After completing the map construction and storage, we need to localize the actual pose of the robot before path planning.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After completing the map construction and storage, we need to localize the actual pose of the robot with **amcl** node before navigation.
 
 1. Create a launch file named **start_localization.launch**. It contains the following contents: launch turtlebot3, call generated map file, launch map_server node and amcl node, and modify various parameters.    The most important parameters are: 
 
