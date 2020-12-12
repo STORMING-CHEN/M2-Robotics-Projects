@@ -52,7 +52,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 </p >
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The topics and services in the gmapping packages and corresponding description are shown blow:
  <p align="center">  
-   <img src = "rosimages/table1.png" width = 350>
+   <img src = "rosimages/table1.png" width = 400>
 </p >
 
 - **tf**: used for the transformation between lidar coordinate system, base coordinate system and odometer coordinate system.  
@@ -70,6 +70,28 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 
  <h3>3.Localization</h3>  
  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AMCL (Adaptive Monte Carlo Localization) package provides amcl node. amcl is a probabilistic localization system for a robot moving in 2D. It implements the adaptive (or KLD-sampling) Monte Carlo localization approach , which uses a particle filter to track the pose of a robot against a known map.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The figure below is the framework of amcl package.
+<p align="center">  
+   <img src = "rosimages/amcl_frame.png" width = 450>
+</p >
+- **odometry localization**: only use odometer data to process TF conversion between / base and / Odom;
+- **AMCL map localization**: can estimate the pose information of the robot in the map coordinate system / map, and provide TF transformation between / base, / Odom, / map
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The topics and services and corresponding description in amcl package are shown below:
+<p align="center">  
+   <img src = "rosimages/table2.png" width = 400>
+</p >
+
+- **Initialpose**: used to initialize the mean and covariance of the particle filter
+- **map**: when parameter use_map_topic is set, amcl subscribes to map topic to obtain map data for laser localization
+- **amcl_pose**: Robot pose estimation in map with covariance information
+- **particlecloud**: Pose estimation ensemble maintained by particle filter
+- **tf**: Publishing transformation from Odom to map
+- **global_localization**: Initialization of global positioning, all particles are randomly scattered on the free area of the map
+- **request_nomotion_update**: Manually perform updates and publish updated particles
+- **static_map**: amcl calls the service to obtain map data
+
  <h3>4.Path Planning</h3>  
  
  <h3>5.Waypoints Navigation</h3>  
