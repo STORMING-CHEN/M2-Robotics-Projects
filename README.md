@@ -136,7 +136,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to realize the navigation function, the first step we need to do is to build a map.   
-1. Build the project package of navigation task, and create launch and param folder in it to prepare for subsequent operation.  
+1. Build the project package of navigation task, and create 2 folders named **launch** and **param**  in it to prepare for subsequent operation.  
 
 2. Create a luanch file named **start_mapping.launch**. It contains the following contents: start turtlebot3, call slam_gmapping node, and modify various parameters of the node.&nbsp;&nbsp;&nbsp;&nbsp;The most important parameters are:   
     - **maxUrange**: This parameter sets the distance the laser creates the map. The larger the range, the faster the map is created, and the less likely the robot is to get lost. The disadvantage is that it consumes more resources.
@@ -154,8 +154,8 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 -
 -
 
-6. Save the map obtained in the previous step. First, we create a folder called maps in the package, and then we use the **map_saver** node form map_server package in ROS Navigation Stack, to read map data in the ROS service and save it. Its execution command is: ```rosrun map_ server map_ saver -f my_ Map;```  After saving, we will get two files in maps folder:
-   - **my_map.pgm**： it contains the occupancy data of the map (the really important data)
+6. Save the map obtained in the previous step. First, we create a folder named **maps** in the package, and then we use the **map_saver** node form map_server package in ROS Navigation Stack, to read map data in the ROS service and save it. Its execution command is: ```rosrun map_ server map_ saver -f my_ Map;```  After saving, we will get two files in maps folder:
+   - **my_map.pgm**：it contains the occupancy data of the map (the really important data)
    - **my_map.yaml**：it contains some metadata about the map, like the map dimensions and resolution, or the path to the PGM file.
 
 
