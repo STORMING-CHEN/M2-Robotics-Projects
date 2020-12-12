@@ -71,7 +71,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 <p align="center">  
    <img src = "rosimages/amcl_frame.png" width = 450>
 </p >
-- **Odometry localization**: only use odometer data to process TF conversion between / base and / Odom;
+1. **Odometry localization**: only use odometer data to process TF conversion between / base and / Odom;
 - **AMCL map localization**: can estimate the pose information of the robot in the map coordinate system / map, and provide TF transformation between / base, / Odom, / map
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The topics and services and corresponding description in amcl package are shown below:
