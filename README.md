@@ -138,7 +138,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to realize the navigation function, the first step we need to do is to build a map with **slam_gmapping** node.   
 1. Build the project package of navigation task, and create 2 folders named **launch** and **param**  in it to prepare for subsequent operation.  
 
-2. Create a launch file named **start_mapping.launch**. It contains the following contents: start turtlebot3, call slam_gmapping node, and modify various parameters of the node.&nbsp;&nbsp;&nbsp;&nbsp;The most important parameters are:   
+2. Create a launch file named **start_mapping.launch**. It contains the following contents: start turtlebot3, launch slam_gmapping node, and set various parameters of the node.&nbsp;&nbsp;&nbsp;&nbsp;The most important parameters are:   
     - **maxUrange**: This parameter sets the distance the laser creates the map. The larger the range, the faster the map is created, and the less likely the robot is to get lost. The disadvantage is that it consumes more resources.
     - **throttle_scans**:  Very useful to reduce resource consumption.  
 3. Execute the launch file to start the mapping operation.  
@@ -165,7 +165,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After completing the map construction and storage, we need to localize the actual pose of the robot with **amcl** node before navigation.
 
-1. Create a launch file named **start_localization.launch**. It contains the following contents: launch turtlebot3, call generated map file, launch map_server node and amcl node, and modify various parameters.    The most important parameters are: 
+1. Create a launch file named **start_localization.launch**. It contains the following contents: launch turtlebot3, call generated map file, launch map_server node and amcl node, and set various parameters.    The most important parameters are: 
 
    - **min_particles, max_particles**: This parameter sets the number of particles the filter will use to localize the robot. The more you use it, the more accurate localization is, but the more resources it consumes.
    - **laser_max_range**: Max range of the laser beams.
