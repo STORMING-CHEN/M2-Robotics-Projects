@@ -48,7 +48,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The figure below is the framework of gmapping package.
     
 <p align="center">  
-   <img src = "rosimages/gmapping_frame.png" width = 350>
+   <img src = "rosimages/gmapping_frame.png" width = 400>
 </p >
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The topics and services in the gmapping packages and corresponding description are shown blow:
  <p align="center">  
@@ -75,7 +75,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 <p align="center">  
    <img src = "rosimages/amcl_frame.png" width = 450>
 </p >
-- **odometry localization**: only use odometer data to process TF conversion between / base and / Odom;
+- **Odometry localization**: only use odometer data to process TF conversion between / base and / Odom;
 - **AMCL map localization**: can estimate the pose information of the robot in the map coordinate system / map, and provide TF transformation between / base, / Odom, / map
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The topics and services and corresponding description in amcl package are shown below:
