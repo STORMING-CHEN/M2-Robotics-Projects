@@ -138,9 +138,9 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to realize the navigation function, the first step we need to do is to build a map.   
 1. Build the project package of navigation task, and create launch and param folder in it to prepare for subsequent operation.  
 
-2. create a luanch file named **start_mapping.launch**. It contains the following contents: start turtlebot3 and call slam_gmapping node, and various parameters of the node. The most important parameters are:   
-- **maxUrange**: This parameter sets the distance the laser creates the map. The larger the range, the faster the map is created, and the less likely the robot is to get lost. The disadvantage is that it consumes more resources.
-- **throttle_scans**:  Very useful to reduce resource consumption.  
+2. Create a luanch file named **start_mapping.launch**. It contains the following contents: start turtlebot3, call slam_gmapping node, and modify various parameters of the node.&nbsp;&nbsp;&nbsp;&nbsp;The most important parameters are:   
+   - **maxUrange**: This parameter sets the distance the laser creates the map. The larger the range, the faster the map is created, and the less likely the robot is to get lost. The disadvantage is that it consumes more resources.
+   - **throttle_scans**:  Very useful to reduce resource consumption.  
 3. Start the launch file to start the mapping operation  
 4. Start Rviz to visualize the process of map building. I use the pre configured Rviz for mapping. Its command is as follows:  
     rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz
