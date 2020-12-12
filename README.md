@@ -34,7 +34,13 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 
 ## Related techniques
  <h3>1.Motion Control</h3>  
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the field of robot, the common research problems include mapping, localization and path planning. Simultaneous localization and mapping belongs to the intersection of location and mapping.
+              
+    
+    
+    
+    
+ <h3>2.Map Building</h3>  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the field of robot, the common research problems include mapping, localization and path planning. Simultaneous localization and mapping belongs to the intersection of location and mapping.
               <p align="center">  
    <img src = "rosimages/module.png" width = 300>
 </p >
@@ -48,12 +54,19 @@ The project goal is to apply the learned ROS techniques and packages to apply 
  <p align="center">  
    <img src = "rosimages/table1.png" width = 350>
 </p >
-    
-    
-    
-    
- <h3>2.Map Building</h3>  
- 
+-**tf**: used for the transformation between lidar coordinate system, base coordinate system and odometer coordinate system. 
+-**scan**: used to subscribe to lidar scan data. 
+-**map_metadata**: publishes map Metadata.
+-**map**: publishes map raster data. 
+-**entropy**: releases estimation of robot poses distribution entropy.
+-**dynamic_map**: used to obtain map data.
+
+
+
+
+
+
+
  <h3>3.Localization</h3>  
  
  <h3>4.Path Planning</h3>  
