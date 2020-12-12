@@ -56,11 +56,11 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 </p >
 
 - **tf**: used for the transformation between lidar coordinate system, base coordinate system and odometer coordinate system.  
- **scan**: used to subscribe to lidar scan data.  
- **map_metadata**: publishes map Metadata.  
-**map**: publishes map raster data.  
-**entropy**: releases estimation of robot poses distribution entropy.  
-**dynamic_map**: used to obtain map data.  
+- **scan**: used to subscribe to lidar scan data.  
+- **map_metadata**: publishes map Metadata.  
+- **map**: publishes map raster data.  
+- **entropy**: releases estimation of robot poses distribution entropy.  
+- **dynamic_map**: used to obtain map data.  
 
 
 
