@@ -130,48 +130,53 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 ## Implementation
 
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Montion Control</h3> 
+
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Map Building</h3> 
 
 
-
-
-
-In order to realize the navigation function, the first step we need to do is to build a map.   
-1.Build the project package of navigation task, and create launch and param folder in it to prepare for subsequent operation.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to realize the navigation function, the first step we need to do is to build a map.   
+1. Build the project package of navigation task, and create launch and param folder in it to prepare for subsequent operation.  
 
 2. create a luanch file named **start_mapping.launch**. It contains the following contents: start turtlebot3 and call slam_gmapping node, and various parameters of the node. The most important parameters are:   
 - **maxUrange**: This parameter sets the distance the laser creates the map. The larger the range, the faster the map is created, and the less likely the robot is to get lost. The disadvantage is that it consumes more resources.
 - **throttle_scans**:  Very useful to reduce resource consumption.  
-3.Start the launch file to start the mapping operation  
+3. Start the launch file to start the mapping operation  
 4. Start Rviz to visualize the process of map building. I use the pre configured Rviz for mapping. Its command is as follows:  
     rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz
-We can see the unexplored maps in the map interface of rviz:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We can see the unexplored maps in the map interface of rviz:
 -
 -
 -
 -
+5. Move turnlebot3 freely around to explore the map and complete the construction of the map. The command to move turtlebot3 with keyboard is 
+    roslaunch_ teleop turtlebot3_ teleop_ key.launch 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where w and x control the forward and backward, a and d control the rotation, s clear the velocity.  The map obtained after the complete exploration is as follows:
+
 -
-5.Move turnlebot3 freely around to explore the map and complete the construction of the map. The command to move turtlebot3 with keyboard is 
-roslaunch_ teleop turtlebot3_ teleop_ key.launch 
-Where w and x control the forward and backward, a and d control the rotation, s clear the velocity.  
-6.Save the map obtained in the previous step. First, we create a folder called maps in the package, and then we use the **map_saver** node form map_server package in ROS Navigation Stack, to read map data in the ROS service and save it. Its execution command is:     rosrun map_ server map_ saver -f my_ Map; 
-after saving, we will get two files in maps folder:
+-
+-
+-
+
+6. Save the map obtained in the previous step. First, we create a folder called maps in the package, and then we use the **map_saver** node form map_server package in ROS Navigation Stack, to read map data in the ROS service and save it. Its execution command is:     rosrun map_ server map_ saver -f my_ Map; 
+After saving, we will get two files in maps folder:
 - **my_map.pgm**： it contains the occupancy data of the map (the really important data)
 - **my_map.yaml**：it contains some metadata about the map, like the map dimensions and resolution, or the path to the PGM file.
 
 
 
 
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Localizationg</h3> 
 
 
 
 
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</h3> 
 
 
 
 
-
-
-
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Waypoints navigation</h3> 
 
 
 
