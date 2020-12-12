@@ -92,6 +92,12 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 
  <h3>&nbsp;&nbsp;&nbsp;&nbsp;Path Planning</h3>  
  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move_base package is the base of the navigation task where it connects all the navigation components. The move_base package provides an implementation of an action that, given a goal in the world, will attempt to reach it with a mobile base. The move_base node links together a global and local planner to accomplish its global navigation task. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The figure below is the navigation framework based on move_base package.
+<p align="center">  
+   <img src = "rosimages/navigation_configuration.png" width = 800>
+</p >
+
  
 
 ## Implementation
