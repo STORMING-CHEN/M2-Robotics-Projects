@@ -34,17 +34,20 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 
 ## Related techniques
  <h3>1.Motion Control</h3>  
-              In the field of robot, the common research problems include mapping, localization and path planning. Simultaneous localization and mapping belongs to the intersection of location and mapping.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the field of robot, the common research problems include mapping, localization and path planning. Simultaneous localization and mapping belongs to the intersection of location and mapping.
               <p align="center">  
-   <img src = "rosimages/module.png" width = 250>
+   <img src = "rosimages/module.png" width = 300>
 </p >
-        gmapping package provides slam_gmapping node. This node is implementing the gmapping SLAM algorithm. It creates a 2D map of the environment using the data the Robot is providing during movement like laser data, in which it will be transformed to an Occupancy Grid Map (OGM) data format (nav_msgs/OccupancyGrid.msg) where it represents a 2-D grid map and each cell of the grid represents the occupancy.
-        The figure below is the framework of gmapping package.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gmapping package provides slam_gmapping node. This node is implementing the gmapping SLAM algorithm. It creates a 2D map of the environment using the data the Robot is providing during movement like laser data, in which it will be transformed to an Occupancy Grid Map (OGM) data format (nav_msgs/OccupancyGrid.msg) where it represents a 2-D grid map and each cell of the grid represents the occupancy.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The figure below is the framework of gmapping package.
     
-    <p align="center">  
-   <img src = "rosimages/gmapping_frame.png" width = 400>
-    </p >
-    
+<p align="center">  
+   <img src = "rosimages/gmapping_frame.png" width = 350>
+</p >
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The topics and services in the gmapping packages and corresponding description are shown blow:
+ <p align="center">  
+   <img src = "rosimages/table1.png" width = 350>
+</p >
     
     
     
