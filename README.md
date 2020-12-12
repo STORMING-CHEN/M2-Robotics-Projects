@@ -103,7 +103,7 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 Global optimal path planning  
 Dijkstra or a * algorithm  
 - **Local planner**  
-The linear velocity and angular velocity of the robot in each cycle are planned to make them conform to the global optimal path as far as possible.  
+Plan the linear velocity and angular velocity of the robot to make them conform to the global optimal path.  
 Real time obstacle avoidance  
 Trajectory rollout and dynamic window approaches algorithm  
 Search for multiple routes to avoid and travel, and select the optimal path by synthesizing the evaluation criteria  
