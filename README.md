@@ -99,10 +99,10 @@ The project goal is to apply the learned ROS techniques and packages to apply 
    <img src = "rosimages/navigation_configuration.png" width = 800>
 </p >
 
-- **Global planner**
+- **Global planner**  
 Global optimal path planning  
 Dijkstra or a * algorithm  
-- **Local planner**
+- **Local planner**  
 The linear velocity and angular velocity of the robot in each cycle are planned to make them conform to the global optimal path as far as possible.  
 Real time obstacle avoidance  
 Trajectory rollout and dynamic window approaches algorithm  
