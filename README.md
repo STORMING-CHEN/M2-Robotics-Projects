@@ -192,7 +192,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;particles are gathered in a small area.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Particle arraies used to measure the uncertainty of the robot current pose gathering in a small area.
    
    
    
