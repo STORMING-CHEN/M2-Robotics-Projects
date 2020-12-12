@@ -163,8 +163,23 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Localizationg</h3> 
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After completing the map construction and storage, we need to localize the actual pose of the robot before path planning.
 
+1. Create a launch file named **start_localization.launch**. It contains the following contents: launch turtlebot3, call generated map file, launch map_server node and amcl node, and modify various parameters.    The most important parameters are: 
 
+   - **min_particles, max_particles**: This parameter sets the number of particles the filter will use to localize the robot. The more you use it, the more accurate localization is, but the more resources it consumes.
+   - **laser_max_range**: Max range of the laser beams.
+   
+   2. Execute the launch file to start the localization operation.
+   
+   
+   
+   
+   
+   
+   
+   
+   
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</h3> 
 
