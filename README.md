@@ -92,13 +92,40 @@ The project goal is to apply the learned ROS techniques and packages to apply 
 
  <h3>&nbsp;&nbsp;&nbsp;&nbsp;Path Planning</h3>  
  
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move_base package is the base of the navigation task where it connects all the navigation components. The move_base package provides an implementation of an action that, given a goal in the world, will attempt to reach it with a mobile base. The move_base node links together a global and local planner to accomplish its global navigation task. 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move_base package is the base of the navigation task where it connects all the navigation components. The move_base package provides an implementation of an action that, given a goal in the world, will attempt to reach it with a mobile base. The move_base node links together a global and local planner to accomplish its global navigation task.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The figure below is the navigation framework based on move_base package.
 <p align="center">  
    <img src = "rosimages/navigation_configuration.png" width = 800>
 </p >
 
+- **Global planner**
+Global optimal path planning
+Dijkstra or a * algorithm
+- **Local planner**
+The linear velocity and angular velocity of the robot in each cycle are planned to make them conform to the global optimal path as far as possible.
+Real time obstacle avoidance
+Trajectory rollout FA dynamic windowapproaches algorithm
+Search for multiple routes to avoid and travel, and select the optimal path by synthesizing the evaluation criteria
+
+<p align="center">  
+   <img src = "rosimages/movebase_frame.png" width = 400>
+</p >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The topics, services, actions and corresponding description in move_base package are shown below:
+
+<p align="center">  
+   <img src = "rosimages/table3.png" width = 400>
+</p >
  
+- **move_base/goal**: Motion planning goal of move_base
+- **move_base/feedback**: Feedback information, including the coordinates of the robot chassis
+- **move_base_simple/goal**: provide a non action interface for users who do not need to track the execution status of the target
+- **cmd_vel**: velocity command output to robot chassis
+- **~make_plan**: allow users to get a path plan for a given target from move_base, not perform it
+
+
+
+
 
 ## Implementation
 
