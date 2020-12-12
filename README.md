@@ -170,12 +170,29 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
    - **min_particles, max_particles**: This parameter sets the number of particles the filter will use to localize the robot. The more you use it, the more accurate localization is, but the more resources it consumes.
    - **laser_max_range**: Max range of the laser beams.
    
-   2. Execute the launch file to start the localization operation.
+2. Execute the launch file to start the localization operation.
+   
+3. Launch Rviz to visualize the process of localization. Use the same pre-configured Rviz as mapping, just add one more display: **Pose Array**, and subscribe it to particlecloud topic.    We can see in Rviz interface as follow:  
+- 
+- 
+- 
+- 
+   
+ 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Particle arraies used to measure the uncertainty of the robot current pose are relatively dispersed.
    
    
+4. Move turtlebot3 around to localize the robot. The moving command is same as before. As we move the robot ,we can see the particles gradually clustering together, which means the estimated pose of robot getting close to real one.    When we get an accurate localization, the interface of Rivz should be shown as follows:  
+
+- 
+- 
+- 
+- 
    
-   
-   
+
+
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;particles are gathered in a small area.
    
    
    
