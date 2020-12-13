@@ -181,7 +181,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 
 <p align="center">  
-   <img src = "rosimages/mapping2.png" width = 650>
+   <img src = "rosimages/mapping2.png" width = 400>
 </p >
 
 6. Save the map obtained in the previous step. First, we create a folder named **maps** in the package, and then we use the **map_saver** node form map_server package in ROS Navigation Stack, to read map data in the ROS service and save it. Its execution command is: ```rosrun map_server map_saver -f my_map;```  After saving, we will get two files in maps folder:
