@@ -132,8 +132,8 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Montion Control</h3> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In ROS, the **/cmd_vel** topic is the robot motion control topic provided by the environment. This topic uses **Twist** type messages, and provide translation and rotation data to the robot to move it.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The /scan topic is used to get the laser information reading form the robot. This topic uses **LaserScan** type message, and we can know the distance between the robot and nearby object from its **ranges** parameter.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In ROS, the **/cmd_vel** topic is the robot motion control topic provided by the environment. This topic uses **Twist** type messages, and provide translation and rotation data to the robot to move it.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The **/scan** topic is used to get the laser information reading form the robot. This topic uses **LaserScan** type message, and from its **ranges** parameter we can know the distance between the robot and nearby object.
 
 1. Create a launch file named **move_robot.launch**. It contains 1 command to run the move_robot.py file.  
 2. Create a folder named scripts, inside it create a motion control script named move_robot.py, and add executable permissions to the file.  
