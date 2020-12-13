@@ -200,6 +200,32 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</h3> 
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After mapping and localization, we can navigate the robot with move_base node, which will provide Path planning and Obstacle avoidance. 
+
+1. Create a launch file named **start_navigation.launch**. It contains the following contents: call generated map file, launch amcl localization node and move_base navigation node, load required parameters(local & global costmaps | local & global planners| move_base).   
+
+2. Create all the parameter files required by the move_base node in **parm** folder
+   -costmap_common_params_burger.yaml
+   -local_costmap_params.yaml
+   -global_costmap_params.yaml
+   -move_base_params.yaml
+   -dwa_local_planner_params.yaml
+
+3. Execute the launch file to start the navigation operation.
+4. Launch the pre-configured Rviz for navigation to visualize the process of navigation. The command is ```rosrun rviz rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_nav.rviz```. We can see the Rviz interface as below: 
+
+- 
+- 
+- 
+- 
+
+5. Use the 2D Pose Estimate tool in Rviz to Localize the Robot in the Map. 
+6. Use the 2D Nav Goal tool in Rviz to send a Goal(desired pose) to the Robot. In Rivz we can see the robot navigate to the goal pose without collision. We can also see the global and local planned path as below:  
+
+- 
+- 
+- 
+- 
 
 
 
