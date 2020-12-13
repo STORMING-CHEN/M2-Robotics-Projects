@@ -205,11 +205,12 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 1. Create a launch file named **start_navigation.launch**. It contains the following contents: call generated map file, launch amcl localization node and move_base navigation node, load required parameters(local & global costmaps | local & global planners| move_base).   
 
 2. Create all the parameter files required by the move_base node in **parm** folder  
-   -costmap_common_params_burger.yaml
-   -local_costmap_params.yaml
-   -global_costmap_params.yaml
-   -move_base_params.yaml
-   -dwa_local_planner_params.yaml
+
+    -costmap_common_params_burger.yaml  
+    -local_costmap_params.yaml  
+    -global_costmap_params.yaml  
+    -move_base_params.yaml  
+    -dwa_local_planner_params.yaml  
 
 3. Execute the launch file to start the navigation operation.
 4. Launch the pre-configured Rviz for navigation to visualize the process of navigation. The command is ```rosrun rviz rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_nav.rviz```. We can see the Rviz interface as below: 
