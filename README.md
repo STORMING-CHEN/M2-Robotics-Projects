@@ -170,10 +170,12 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
     - **throttle_scans**:  Very useful to reduce resource consumption.  
 3. Execute the launch file to start the mapping operation.  
 4. Launch the preconfigured Rviz for mapping to visualize the process of map building. The command is ```rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz```  &nbsp;&nbsp;&nbsp;&nbsp;We can see the unexplored maps in the map interface of Rviz:
--
--
--
--
+
+<p align="center">  
+   <img src = "rosimages/mapping1.png" width = 600>
+</p >
+
+
 5. Move turtlebot3 freely around to explore the map and complete the construction of the map. The command to move turtlebot3 with keyboard is ```roslaunch_ teleop turtlebot3_ teleop_ key.launch``` &nbsp;&nbsp;&nbsp;&nbsp;Where w and x control the forward and backward, a and d control the rotation, s clear the velocity. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The map obtained after the complete exploration is as follows:
 
 -
