@@ -172,16 +172,15 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 4. Launch the preconfigured Rviz for mapping to visualize the process of map building. The command is ```rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz```  &nbsp;&nbsp;&nbsp;&nbsp;We can see the unexplored maps in the map interface of Rviz:
 
 <p align="center">  
-   <img src = "rosimages/mapping1.png" width = 600>
+   <img src = "rosimages/mapping1.png" width = 700>
 </p >
 
 
 5. Move turtlebot3 freely around to explore the map and complete the construction of the map. The command to move turtlebot3 with keyboard is ```roslaunch_ teleop turtlebot3_ teleop_ key.launch``` &nbsp;&nbsp;&nbsp;&nbsp;Where w and x control the forward and backward, a and d control the rotation, s clear the velocity. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The map obtained after the complete exploration is as follows:
 
--
--
--
--
+<p align="center">  
+   <img src = "rosimages/mapping1.png" width = 700>
+</p >
 
 6. Save the map obtained in the previous step. First, we create a folder named **maps** in the package, and then we use the **map_saver** node form map_server package in ROS Navigation Stack, to read map data in the ROS service and save it. Its execution command is: ```rosrun map_ server map_ saver -f my_ Map;```  After saving, we will get two files in maps folder:
    - **my_map.pgm**：it contains the occupancy data of the map (the really important data)
