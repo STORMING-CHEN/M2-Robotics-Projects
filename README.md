@@ -248,11 +248,9 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 -
 -
 
-7.Start waypoints navigation by publishing in the topic **/path_ready** to start sending waypoints to movebase. The execution command is ```rostopic pub /path_ready std_msgs/Empty -1```.  
-          The demo vedio of waypoints navigation can be found in the next chapter
+7.Start waypoints navigation by publishing in the topic **/path_ready** to start sending waypoints to movebase. The execution command is ```rostopic pub /path_ready std_msgs/Empty -1```. 
 
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The demo vedio of waypoints navigation can be found in [Demo videos](#Demo-videos).
 
 
 
