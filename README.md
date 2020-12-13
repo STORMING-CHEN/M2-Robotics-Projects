@@ -237,7 +237,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 1. Download the follow_waypoints package to workspace directory. The command is ```cd ~/catkin_ws/src```   ```git clone https://github.com/danielsnider/follow_waypoints.git```.
 2. Build our workspace again and compile the new package. Execute in catkin_ws directory the command ```catkin_make```  ``` source /devel/setup.bash```   ```rospack profile```.
 3. Execute the navigation launch file and keep it running.
-4. Start the waypoint server with a command ‘’’roslaunch follow_waypoints follow_waypoints.launch’’’.
+4. Start the waypoint server with a command ```roslaunch follow_waypoints follow_waypoints.launch```.
 
 5. Launch the pre-configured Rviz for navigation, and add a **PoseArray** subscribed to /waypoints topic. This PoseArray will show all waypoints we set. We rename the PoseArray and change its color to distinguish from localization pose estimates.
 
@@ -248,7 +248,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 -
 -
 
-7.Start waypoints navigation by publishing in the topic **/path_ready** to start sending waypoints to movebase. The execution command is ‘’’rostopic pub /path_ready std_msgs/Empty -1’’’.  
+7.Start waypoints navigation by publishing in the topic **/path_ready** to start sending waypoints to movebase. The execution command is ```rostopic pub /path_ready std_msgs/Empty -1```.  
           The demo vedio of waypoints navigation can be found in the next chapter
 
 
