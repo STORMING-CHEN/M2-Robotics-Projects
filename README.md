@@ -231,10 +231,10 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Waypoints navigation</h3> 
 
-After completing the single goal navigation, we can further navigate to pass a series of destinations with the **follow_waypoints** package. In this package, Waypoints server listens to publications into topic **/initialpose**,which is the **Estimate pose** that we place in Rviz, and store those poses until it’s instructed to send them to move_base to be executed.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After completing the single goal navigation, we can further navigate to pass a series of destinations with the **follow_waypoints** package. In this package, Waypoints server listens to publications into topic **/initialpose**, which is the **Estimate pose** that we place in Rviz, and store those poses until it’s instructed to send them to move_base to be executed.
 
 
-1. Download the follow_waypoints package to workspace directory. The command is ‘’’cd ~/catkin_ws/src’’’,’’’git clone https://github.com/danielsnider/follow_waypoints.git’’’.
+1. Download the follow_waypoints package to workspace directory. The command is ```cd ~/catkin_ws/src``````git clone https://github.com/danielsnider/follow_waypoints.git```.
 2. Build our workspace again and compile the new package. Execute in catkin_ws directory the command ‘’’catkin_make’’’,’’’ source /devel/setup.bash’’’,’’’rospack profile’’’.
 3. Execute the navigation launch file and keep it running.
 4. Start the waypoint server with a command ‘’’roslaunch follow_waypoints follow_waypoints.launch’’’.
