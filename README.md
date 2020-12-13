@@ -267,7 +267,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 6. Set waypoints: In Rviz interface, select **PoseEstimate** and set it on the map as waypoints. **The last waypoint has to be same as current pose of the robot**. After setting waypoints, we get in webshell where we launched the waypoint server a message stating that it recieved the waypoint, and the Rivz interface is as below:
 
 <p align="center">  
-   <img src = "rosimages/waypoints1.png" width = 600>
+   <img src = "rosimages/waypoints1.png" width = 400>
 </p >
 
 7. Start waypoints navigation by publishing in the topic **/path_ready** to start sending waypoints to movebase. The execution command is ```rostopic pub /path_ready std_msgs/Empty -1```. 
@@ -288,11 +288,11 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to prepare for the project, we need to study the corresponding basic courses, they are: linux4robotics, python4robotics, ROS basic in 5 days, ROS navigation in 5 days, mastering Turtle 3. All the related courses are studied and practiced on the construction platform, and the final project is unit 8 of the turtlebot3 course. There is no real machine operation in the whole process. The operating system supported by the construct platform is Ubuntu, and the simulated environment is gazebo. Construct is a very good robot virtual platform, the tutorial is written reasonably and efficiently. But there is a disadvantage that the platform is unstable. So in order not to be affected by the emergency crash, the simulation experiment needs to be carried out in advance.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Through this whole project, I have gained experience in the principle of ROS, the use of Linux system, the framework of python, the principle of navigation technology, the use of various robots and markdown language in githup.
 ## Demo videos
-- [Motion control](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
-- [Map building](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
-- [Localization](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
-- [Navigation](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
-- [Waypoints navigation](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
+
+- [Map building](https://www.loom.com/share/66d162faffce4f00b96c7dca73b526b4)
+- [Localization](https://www.loom.com/share/8b7f2e829d42476a875ab880f97f2627)
+- [Navigation](https://www.loom.com/share/843fbcde23d241d7abeb31dba260aa5d)
+- [Waypoints navigation](https://www.loom.com/share/1954d879df6c425daf64283dd80a5da0)
 ## References
 1. [Construct Platform](http://theconstructsim.com)
 2. [Wiki ROS](http://wiki.ros.org/)
