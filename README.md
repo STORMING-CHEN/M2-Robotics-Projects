@@ -205,7 +205,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 3. Launch Rviz to visualize the process of localization. Use the same pre-configured Rviz as mapping, just add one more display: **Pose Array**, and subscribe it to particlecloud topic.    We can see in Rviz interface as follow:  
 
 <p align="center">  
-   <img src = "rosimages/localization1.png" width = 650>
+   <img src = "rosimages/localization1.png" width = 400>
 </p >
    
  
@@ -215,7 +215,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 4. Move turtlebot3 around to localize the robot. The moving command is same as before. As we move the robot ,we can see the particles gradually clustering together, which means the estimated pose of robot getting close to real one.    When we get an accurate localization, the interface of Rivz should be shown as follows:  
 
 <p align="center">  
-   <img src = "rosimages/localization2.png" width = 650>
+   <img src = "rosimages/localization2.png" width = 400>
 </p >
    
 
@@ -244,14 +244,14 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 4. Launch the pre-configured Rviz for navigation to visualize the process of navigation. The command is ```rosrun rviz rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_nav.rviz```. We can see the Rviz interface as below: 
 
 <p align="center">  
-   <img src = "rosimages/navigation1.png" width = 650>
+   <img src = "rosimages/navigation1.png" width = 400>
 </p >
 
 5. Use the 2D Pose Estimate tool in Rviz to Localize the Robot in the Map. 
 6. Use the 2D Nav Goal tool in Rviz to send a Goal(desired pose) to the Robot. In Rivz we can see the robot navigate to the goal pose without collision. We can also see the global and local planned path as below:  
 
 <p align="center">  
-   <img src = "rosimages/navigation2.png" width = 650>
+   <img src = "rosimages/navigation2.png" width = 400>
 </p >
 
 
@@ -271,7 +271,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 6. Set waypoints: In Rviz interface, select **PoseEstimate** and set it on the map as waypoints. **The last waypoint has to be same as current pose of the robot**. After setting waypoints, we get in webshell where we launched the waypoint server a message stating that it recieved the waypoint, and the Rivz interface is as below:
 
 <p align="center">  
-   <img src = "rosimages/waypoints1.png" width = 650>
+   <img src = "rosimages/waypoints1.png" width = 400>
 </p >
 
 7. Start waypoints navigation by publishing in the topic **/path_ready** to start sending waypoints to movebase. The execution command is ```rostopic pub /path_ready std_msgs/Empty -1```. 
