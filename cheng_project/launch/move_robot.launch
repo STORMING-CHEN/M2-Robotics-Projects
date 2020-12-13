@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="cheng_project" type="move_robot.py" name="move_robot_node" output="screen" />
+</launch>
