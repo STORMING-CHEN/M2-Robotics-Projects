@@ -176,7 +176,9 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 </p >
 
 
-5. Move turtlebot3 freely around to explore the map and complete the construction of the map. The command to move turtlebot3 with keyboard is ```roslaunch_ teleop turtlebot3_ teleop_ key.launch``` &nbsp;&nbsp;&nbsp;&nbsp;Where w and x control the forward and backward, a and d control the rotation, s clear the velocity. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The map obtained after the complete exploration is as follows:
+5. Move turtlebot3 freely around to explore the map and complete the construction of the map. The command to move turtlebot3 with keyboard is ```roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch``` &nbsp;&nbsp;&nbsp;&nbsp;Where w/x increase/decrease linear velocity, a/d increase/decrease angular velocity, space key, s  force stop. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The map obtained after the complete exploration is as follows:
+
+
 
 <p align="center">  
    <img src = "rosimages/mapping2.png" width = 650>
