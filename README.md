@@ -132,6 +132,31 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Montion Control</h3> 
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In ROS, the **/cmd_vel** topic is the robot motion control topic provided by the environment. This topic uses **Twist** type messages, and provide translation and rotation data to the robot to move it.
+1. Create a launch file named **move_robot.launch**. It contains 1 command to run the move_robot.py file.  
+2. Create a folder named scripts, inside it create a motion control script named move_robot.py, and add executable permissions to the file.  
+3. In move_robot.py we create a variable called pub that is responsible for publishing Twist information to cmd_vel topic. By ```move.linear.x = 0.3``` and ```move.linear.x = 0.3```command, we can move the robot with a linear velocity in x axis and an angular velocity in the z axis
+```
+    #! /usr/bin/env python
+    import rospy
+    from geometry_msgs.msg import Twist
+    rospy.init_node('move_robot_node')
+    pub = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
+    rate = rospy.Rate(2)
+    move = Twist()
+    move.linear.x = 0.3 
+    move.linear.x = 0.3 
+    while not rospy.is_shutdown(): 
+    pub.publish(move)
+    rate.sleep()   
+```
+
+
+
+
+
+
+
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Map Building</h3> 
 
 
