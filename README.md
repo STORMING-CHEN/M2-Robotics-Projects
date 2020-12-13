@@ -231,6 +231,35 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Waypoints navigation</h3> 
 
+After completing the single goal navigation, we can further navigate to pass a series of destinations with the **follow_waypoints** package. In this package, Waypoints server listens to publications into topic **/initialpose**,which is the **Estimate pose** that we place in Rviz, and store those poses until it’s instructed to send them to move_base to be executed.
+
+
+1. Download the follow_waypoints package to workspace directory. The command is ‘’’cd ~/catkin_ws/src’’’,’’’git clone https://github.com/danielsnider/follow_waypoints.git’’’.
+2. Build our workspace again and compile the new package. Execute in catkin_ws directory the command ‘’’catkin_make’’’,’’’ source /devel/setup.bash’’’,’’’rospack profile’’’.
+3. Execute the navigation launch file and keep it running.
+4. Start the waypoint server with a command ‘’’roslaunch follow_waypoints follow_waypoints.launch’’’.
+
+5. Launch the pre-configured Rviz for navigation, and add a **PoseArray** subscribed to /waypoints topic. This PoseArray will show all waypoints we set. We rename the PoseArray and change its color to distinguish from localization pose estimates.
+
+6. Set waypoints: In Rviz interface, select **PoseEstimate** and set it on the map as waypoints. **The last waypoint has to be same as current pose of the robot**. After setting waypoints, we get in webshell where we launched the waypoint server a message stating that it recieved the waypoint, and the Rivz interface is as below:
+
+-
+-
+-
+-
+
+7.Start waypoints navigation by publishing in the topic **/path_ready** to start sending waypoints to movebase. The execution command is ‘’’rostopic pub /path_ready std_msgs/Empty -1’’’.  
+          The demo vedio of waypoints navigation can be found in the next chapter
+
+
+
+
+
+
+
+
+
+
 
 
 
