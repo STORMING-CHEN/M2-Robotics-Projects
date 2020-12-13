@@ -267,7 +267,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 6. Set waypoints: In Rviz interface, select **PoseEstimate** and set it on the map as waypoints. **The last waypoint has to be same as current pose of the robot**. After setting waypoints, we get in webshell where we launched the waypoint server a message stating that it recieved the waypoint, and the Rivz interface is as below:
 
 <p align="center">  
-   <img src = "rosimages/waypoints1.png" width = 400>
+   <img src = "rosimages/waypoints1.png" width = 500>
 </p >
 
 7. Start waypoints navigation by publishing in the topic **/path_ready** to start sending waypoints to movebase. The execution command is ```rostopic pub /path_ready std_msgs/Empty -1```. 
