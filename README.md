@@ -142,7 +142,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
     - **maxUrange**: This parameter sets the distance the laser creates the map. The larger the range, the faster the map is created, and the less likely the robot is to get lost. The disadvantage is that it consumes more resources.
     - **throttle_scans**:  Very useful to reduce resource consumption.  
 3. Execute the launch file to start the mapping operation.  
-4. Launch Rviz to visualize the process of map building. I use the pre configured Rviz for mapping. The command is ```rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz```  &nbsp;&nbsp;&nbsp;&nbsp;We can see the unexplored maps in the map interface of Rviz:
+4. Launch the preconfigured Rviz for mapping to visualize the process of map building. The command is ```rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz```  &nbsp;&nbsp;&nbsp;&nbsp;We can see the unexplored maps in the map interface of Rviz:
 -
 -
 -
