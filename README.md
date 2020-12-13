@@ -240,7 +240,9 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Through this whole project, I have gained experience in the principle of ROS, the use of Linux system, the framework of python, the principle of navigation technology, the use of various robots and markdown language in githup.
 ## Demo videos
 - [Motion control](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
-- [Path planing navigation](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
+- [Map building](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
+- [Localization](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
+- [Navigation](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
 - [Waypoints navigation](https://www.loom.com/share/c9cc85b31b6c4e6692d15c345f1530b0)
 ## References
 1. [Construct Platform](http://theconstructsim.com)
