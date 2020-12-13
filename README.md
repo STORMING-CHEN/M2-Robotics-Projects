@@ -200,7 +200,7 @@ Search for multiple routes to avoid and travel, and select the optimal path by s
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</h3> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After mapping and localization, we can navigate the robot with move_base node, which will provide Path planning and Obstacle avoidance. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After mapping and localization, we can navigate the robot with **move_base_node**, which will provide Path planning and Obstacle avoidance. 
 
 1. Create a launch file named **start_navigation.launch**. It contains the following contents: call generated map file, launch amcl localization node and move_base navigation node, load required parameters(local & global costmaps | local & global planners| move_base).   
 
